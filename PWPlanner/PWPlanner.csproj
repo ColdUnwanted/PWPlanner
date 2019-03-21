@@ -1,0 +1,1233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E99C5967-A5CF-4C6F-BAB9-9F2862E0DFEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PWPlanner</RootNamespace>
+    <AssemblyName>PWPlanner</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=1.6.2.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.1.6.2\lib\dotnet\Costura.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.3.1.953, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.3.1.953\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ShowMeTheXAML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ShowMeTheXAML.1.0.9\lib\net45\ShowMeTheXAML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.2.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.2.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.2.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.2.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.2.0\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.2.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Core\TileHistory.cs" />
+    <Compile Include="Core\Settings.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="TileTypes\Background.cs" />
+    <Compile Include="TileTypes\Foreground.cs" />
+    <Compile Include="TileTypes\Special.cs" />
+    <Compile Include="Windows\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\DataHandler.cs" />
+    <Compile Include="Core\ImageLoader.cs" />
+    <Compile Include="Core\MainBackground.cs" />
+    <Compile Include="Core\Search.cs" />
+    <Compile Include="Core\Selector.cs" />
+    <Compile Include="Core\TileData.cs" />
+    <Compile Include="Core\TileMap.cs" />
+    <Compile Include="Core\UpdateChecker.cs" />
+    <Compile Include="Windows\StatsWindow.xaml.cs">
+      <DependentUpon>StatsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\UpdateWindow.xaml.cs">
+      <DependentUpon>UpdateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Page Include="Windows\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\StatsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\UpdateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\Forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\Night.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Night.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Winter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Candy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\Candy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\Winter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\Alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="config.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Desert.png" />
+    <Resource Include="Resources\Backgrounds\Desert.png" />
+    <Resource Include="Resources\Icons\Cemetery.png" />
+    <Resource Include="Resources\Backgrounds\Cemetery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ArmoredBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BambooWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BarredWindow1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BarredWindow2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BarredWindow3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BarredWindow4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlackDiagonalChecker.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlackIronBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlackIronBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlackMetalSheet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlackTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueBigTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueDiagonalChecker.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueNeonBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueSpheresBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueTangleWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueXmasWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BrokenRuinBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BrownBigTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BrownBrickWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BrownIronBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BrownIronBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BrownVegetationBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BurntBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CandyBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CandyLaceBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CastleWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CastleWallTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CastleWindow.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CaveWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ChocolateBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CloverleafWindow.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\CloverWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ClownWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkUrbanBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkUrbanBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkUrbanBackground3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DirtyHerringbone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DirtyWall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DirtyWall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DollarBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DungeonBars.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DungeonWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\EctoplasmBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenBrickBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenShinglesWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenTileBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenWindow1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenWindow2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenWindow3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenWindow4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenWindow5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ElvenWindow6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\FlowerWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GhostBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenBigTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenGiftwrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenGlowWire.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenNeonBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenScreen.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenSpheresBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreyBigTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreyBrickWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreyDotIllusion.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreyHerringbone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreyIronBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreyIronBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreySpheresBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\HeartWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\HoneycombBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IceBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ImperialWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IndentedElvenBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IndentedElvenBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IndentedElvenBackground3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IndentedPurpleBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IndentedPurpleBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\IndentedPurpleBackground3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\JailBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\LavaBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\LightBlueWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\LightWoodenBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\MeltedChocolate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\MetalBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\MetalBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\MetalBackground3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\MetalBeamsBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\MoneyBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\NonSlipMetal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\OrangeGlowWire.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\OrangeNeonBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\OrangeTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PatterbedMetalBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PinkTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleBrickBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleTileBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RainbowWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedBigTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedBrickWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedDiagonalChecker.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedDotIllusion.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedSpheresBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedVelvetBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedXmasWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RoundMoire.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RuinBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RuinTileBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RuneBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SamuraiBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SandyCaveWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ScaffoldBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ScaffoldBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ScifiBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ScifiBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ScifiBackground3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\ScifiBackground4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\Shoji.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SilverVegetationBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SkyscrapperWindow1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SkyscrapperWindow2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SkyscrapperWindow3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SkyscrapperWindow4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SlimyBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SpheresWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SpiralMosaic.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SquareMoire.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\StarryWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\StoneBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\StoreWindow1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\StoreWindow2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\StoreWindow3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\StripesWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\TilesWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\TintedWindowFrame.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\TornWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\UnholyBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\UrbanBackground1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\UrbanBackground2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\UrbanBackground3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\VegetationBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\VikingStoneBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\VioletNeonBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WhiteStripedWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WhiteTangleWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WhiteTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WindowFrame.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WirefenceBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WoodenBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WoodenBeamBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WoodenPolesBackground.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\WoodenWindowFrame.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\YellowBrickWallpaper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\YellowTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlabasterPillar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienEye.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AnniversaryCake.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AnniversaryCake2yo.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AnniversaryHamRadio.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AnniversaryPortal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AntiqueChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AntiqueTable.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ArmChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ArrowSign1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ArrowSign2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ArrowSign3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ArrowSign4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AshenSoil.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AshenSoilalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bamboo.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BarStool.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bathtub.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BattleGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BattleGatealt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BattleLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BattleScoreboard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BattleWorldLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BBB.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BBBGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BBBGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bedrock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BedrockFlat.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BedrockLava.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BeigeBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BirthdayCake.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlackBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlackBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlackCandles.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlackPennant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BloodSplash.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BloodyChest.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BloodyClawMarks.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueCandyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueCanopy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueEasterBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueEasterEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueGlowBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueMetalChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BluePortal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueRunestone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueSunUmbrella.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BoneGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BoneGatealt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bonfire.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BookPodium.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bookshelf.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Boombox.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BowlofJellyBeans.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Brazier.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrokenRuinTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeBabyCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeFishermansCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeGoblet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeMedal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeProCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownVegetationBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BubblegumMachine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bumper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BunnyLoco.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Bush.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Buzzsaw.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Cabinet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Cactus.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Campfire.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandleStand.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandyCaneBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandyPipe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandySpikes1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandySpikes2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandySpikes3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandySpikes4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandySpiralBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CandyWatermelonBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CastleDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CastleWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CelticColumn1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CelticColumn2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CelticColumn3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CelticCross.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Chains.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ChaosBanner.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ChaosLightCrystal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ChaosThrone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Checkpoint.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CheeseBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ChemistryPoster.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CherryBonsai.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ChocoDecoBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ChurchBell.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CircuitBoard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ClassicPainting.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ClassicSculpture.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ClassicSculpturealt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ClayPot.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ClearJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CloudPlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CloverleafBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CoalBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CoatRack.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CobraStatue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Coffin.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConcreteBlock1x1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConcreteBlock2x1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConcreteBlock2x2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConcretePlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstructionBarricade.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CookieBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Corn.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CrackedPottery.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CubistPainting.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CupidStatue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CyanCandyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DaHoodSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkBridge1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkBridge2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkBridge3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkChocolateBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkDrainPipe1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkDrainPipe2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkDrainPipe3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkElectricWires1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkElectricWires2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkElectricWires3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkElectricWires4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkElectricWires5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkElectricWires6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkRedBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkSign1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkSign2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkStoneBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkStoneBlock1alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkStoneBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkStoneBlock2alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkStoneBlock3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkStoneBlock3alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkSupportBeam1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkSupportBeam2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkWorldLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DeathCounter.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DecorativeSword.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Deflector.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DemonAltar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DesktopPC.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Diploma.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DiscoBall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DiscoBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DisplayCase.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Door.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DottedPinkBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DragonFossil7.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DrippingBlood.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DrippingSlimeCorner.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DrippingSlimeTop.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DungeonDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterChicks.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterEggBasket.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EbenWoodChest.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricitySign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBanner.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock1alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock2alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock3alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBlock4alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBridge1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBridge2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenBridge3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenLightCrystal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenSign1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenSign2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElvenThrone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EntrancePortal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EvilSpikeTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EvilSpikeTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EvilSpikeTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EvilSpikeTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Evolverator.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ExclamationSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FallingSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FamiliarFoodMachine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FancyTombstone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FavouriteHologram.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FinishLine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FINPennant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballShooterTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballShooterTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballShooterTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballShooterTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireBarrel.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Firefly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireHydrant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Fireplace.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FishBarrel.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Fishbowl.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FishingScoreboard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FishTank.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FlatScreenTV.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FloorLamp.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FloorSpotlight.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FlowerofSummer.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Fountain.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FrankensteinBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Fridge.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FrostedSoilBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FrostedSoilBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FruitTray.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Fungi.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FuseCabinet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GardenGnome.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Gargoyle.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GemSoil.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GemSoilalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GhostTrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GiantClamChest.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GiantEasterEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GingerbreadBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GingerbreadFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GingerbreadSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlassBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlassCabinet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlassDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlowingContainer.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlueBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlueBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GluePlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenBabyCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenConeStatue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenFishermansCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenHorseshoe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenPopsicleStatue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenProCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenSkullBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenToilet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Gramophone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Granite.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Grass.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GraveSlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Gravestone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GravityModifier.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenCandyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenEasterBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenGlowBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenGummyBear.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenMetalChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenMushroom.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenPennant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenPipeBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenPipeBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenPipeBlock3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenPipeBlock4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenRunestone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenStereos.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenXmasRibbon.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyFireStairs1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyFireStairs2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyFireStairs3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyFireStairs4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyFireStairs5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HamRadio.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingBat.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingHearts.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingLeaves.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingSkull.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingWires1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingWires2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HauntedMirror.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HazardBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HazardPlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Headstone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartDecoration.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti7.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti8.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartGraffiti9.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeartTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeavyMetalPoster.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HelloBot.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeroicPinballBumper.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeroicSpringBoard1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeroicSpringBoard2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeroicSpringBoard3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HeroicSpringBoard4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Hokora.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HollyWreath.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HotTub.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HousePlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HugeMetalFan1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HugeMetalFan2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HugeRedFan1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HugeRedFan2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Ice.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IceCreamSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IcePlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Icicles.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IndustrialFan.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IrishBalloons.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IrishPennantString.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IronBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IronChandelier.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IronFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\IronThrone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\JackoLantern.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\JakeGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\JakeGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\JakeGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\JakeGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\JungleGrass.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\KatanaDecoration.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\KettleGrill.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\KiddieRide.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\KiwiBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabControlPanel1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabControlPanel2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabEquipment1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabEquipment2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabEquipment3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabHose1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabHose2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LabMeter.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Lantern.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LargeBush.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LargeLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LargeSandCastle.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserBeamTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserBeamTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserBeamTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserBeamTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Lava.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LavaLamp.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LeaningPlanks.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LEDSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LegendarySoilBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LegendarySoilBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LemonadeKeg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LeopardArmchair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LeprechaunGnome.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LevelDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LevelHatch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LevelVIPDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LevelVIPHatch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Lifebuoy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightBlueBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightBlueJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightDrainPipe1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightDrainPipe2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightDrainPipe3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightPavement.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightPavementalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightSupportBeam1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LightSupportBeam2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Lily.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LiquorishBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LuckyCloverleaf.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LuckyHorseshoe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MagicStuff.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MagLift.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MakeupTable.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ManekiNekoL.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ManekiNekoR.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Mannequin.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Marble.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MarbleFireplace.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MayanStatue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MediumLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MediumSandCastle.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalBarrel.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalBeamBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalBeamBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalBeamPlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalHatch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalPlate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalPlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalRailing.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalRingBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalSlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MetalTrapDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Microwave.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MilkChocolateBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Mimic.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MinatureSpaceship.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MirrorWardrobe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Moai.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ModernPainting.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MossyRuinTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Mushroom.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NeonHeart.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherCrystal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherGraffiti5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NetherGraffiti6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NoteBoard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Obisidian.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OldAltar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OldBrickPile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OldTV.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OldTyres.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OldWallLamp.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OpenSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeEasterEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeGlowBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeGummyBear.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OrangeRunestone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OuijaBoard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Oven.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Palisade.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ParrotCage.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PhoneLinePole1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PhoneLinePole2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PhoneLinePole3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PicnicTable.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PileOfMoney.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Pinata.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PineappleBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PineappleBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PinkBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PinkBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PinkCandyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PinkJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PinkMetalChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PinkRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixieDust.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PlainPoster.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PlatinumLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PoisonTrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PoisonTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PoisonTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PoisonTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Poop.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Portal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PotofGold.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PottedPlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PrizeBox.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleEasterBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleSunUmbrella.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWETerminal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWGraffiti5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PWGraffiti6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\QuantumSafe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RadiatingNuke.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RatingBoard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RavenTree.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyButterflyfish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyCarp.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyGoldfish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyHalibut.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyHerring.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyKingfish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophySeaAngler.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyTuna.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Recycler.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedCandle.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedCandyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedCanopy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedEasterBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedFireStairs1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedFireStairs2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedFireStairs3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedFireStairs4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedFireStairs5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedGlowBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedGummyBear.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedJelloPlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedMetalChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedPortal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedRunestone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedSunUmbrella.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedXmasRibbon.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedZombieTrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ReindeerLights.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ReinforcedPillar1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ReinforcedPillar2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ReinforcedPillar3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ReinforcedPillar4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Replicator.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Rocks.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RodUpgradeStation.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Rose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RoundMetalTable.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RubberDuck.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinPatternBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinPatternBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinSlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinTiles.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuleBot.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Safe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SamuraiBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Sand.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Sandalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SandCastle.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Sandstone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Sarcophagus.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SarcosuchusFossil1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SarcosuchusFossil2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SarcosuchusFossil3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SarcosuchusFossil4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiArrow1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiArrow2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiArrow3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiArrow4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiBlock3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiBlock4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiBlock5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiComputer.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiCrate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiCratePile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiGenerator.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiInterface1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiLights.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiPanel1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiPanel2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiPanel3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiPillar1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiTable.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Scoreboard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Serpentine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SerpentineandEggs.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SewageDrain.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SheriffCoatRack.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Shikaka.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ShovelInSand.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Shower.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Shrubbery.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Sign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverBabyCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverFishermansCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverProCupTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverTreeTrunk1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverTreeTrunk2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverTreeTrunk3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverTreeTrunk4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SilverVegetationBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SinisterCalendar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SkullBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SlicedWatermelonBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallBush.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallChest.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallFuseBox.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallPWGraffiti.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallRocks.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallSandCastle.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SnowBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SnowBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SnowLantern.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Snowman.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SnowyFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SoilBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SoilBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SourGround.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SourGroundalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Spider.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpiderWeb.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeBall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpiralPillar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Spotlight.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpringBoard.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpringBoard2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpringBoard3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpringBoard4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpringFlowers.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StartLine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SteelSpikes1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SteelSpikes2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SteelSpikes3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SteelSpikes4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Stereos.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StonePlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StopSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StrawberryBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StrawberryBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StreetBench.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StreetFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StuddedMetal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SunChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Sunflower.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SunUmbrella.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SurfStand.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SwingChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SwordInStone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TaikoDrum.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TallGrass.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Tapestry.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TeaSet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TeslaSphere.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Throne.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TikiBar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TikiTorch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TintedGlassDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ToiletSeat.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TombStone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Torch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Torii.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ToyBunny.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ToyChick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TrafficCone.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TrafficLights.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TrashCan.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeStump.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeTrunk.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeTrunk2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeTrunk3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeTrunk4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil7.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil8.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TRexFossil9.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Truss1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Truss2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Truss3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Truss4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Truss5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Turkey.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TVAntenna.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TVChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TwistedTreePillar1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TwistedTreePillar2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TwistedTreePillar3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TwistedTreePillar4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TwistedTreePillar5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UnholyGround.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UnholyGroundalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanGraffiti5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanGraffiti6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanPoster1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanPoster2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanSign1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanSign2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanSign3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanSign4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UrbanWoodenFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UVSGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UVSGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UVSGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UVSGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UVSGraffiti5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\UVSGraffiti6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VegetationBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingArmorBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingFigureHead.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingShieldDecoration.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingWall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingWall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VikingWall4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Vine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VioletEasterEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VioletRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\VortexPortal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Wardrobe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WaterBed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WatercolorBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WatermelonBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WeaponRack.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WeaponRuleBot.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WhiteBlocks.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WhiteBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WhiteDungeonDoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WhiteRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WillowCatkin.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WingedHumanoid1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WingedHumanoid2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WingedHumanoid3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WingedHumanoid4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WinterBells.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WireFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WishingWell.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenBarrel.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenCrate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenFence.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenHatch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenPlatform.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenTable.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodPanel.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WorldHologram.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WorldLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WOTWTrophy.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\XmasLights.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\XmasTree.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\XtremeSpkr.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YardLamp.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowBrick.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowCandyBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowEasterBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowJelly.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowMetalChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YellowRoyalEgg.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\YinYangBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ZombieTrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Special\Acid.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Acidalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\DarkFog.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\DarkFogalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\FakeBlood.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\FakeBloodalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Fog.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Fogalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Quicksand.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Quicksandalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Water.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Wateralt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\WaterDarkRiver.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\WaterDarkRiveralt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.2.0.7\build\dotnet\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" />
+</Project>
