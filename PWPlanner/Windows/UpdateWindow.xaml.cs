@@ -56,9 +56,9 @@ namespace PWPlanner.Windows
                     WebClient client = new WebClient();
                     client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
                     client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-                    client.DownloadFileAsync(new Uri($"https://github.com/Nenkai/PixelPlanner/releases/download/{version}/PWPlanner.exe"), path);
+                    client.DownloadFileAsync(new Uri($"https://github.com/ColdUnwanted/PWPlanner/releases/download/{version}/PWPlanner.exe"), path);
                     vers.Content = "Downloading version " + version;
-                    url.Content = $"Downloading from https://github.com/Nenkai/PixelPlanner/releases/download/{version}/PWPlanner.exe";
+                    url.Content = $"Downloading from https://github.com/ColdUnwanted/PWPlanner/releases/download/{version}/PWPlanner.exe";
                 }
                 catch (Exception e)
                 {

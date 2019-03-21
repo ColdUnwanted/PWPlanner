@@ -12,7 +12,7 @@ namespace PWPlanner
     {
         public static string latest;
         public static string changelog;
-        public static readonly string URL = "https://raw.githubusercontent.com/Nenkai/PixelPlanner/master/PWPlanner/config.xml";
+        public static readonly string URL = "https://raw.githubusercontent.com/ColdUnwanted/PWPlanner/master/PWPlanner/config.xml";
 
         public static string current
         {
