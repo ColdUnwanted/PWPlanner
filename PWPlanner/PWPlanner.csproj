@@ -1242,6 +1242,31 @@
     <EmbeddedResource Include="Resources\Tiles\Special\WaterDarkRiver.png" />
     <EmbeddedResource Include="Resources\Tiles\Special\WaterDarkRiveralt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti7.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti8.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalactites1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalactites2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalactites3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalagmites1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalagmites2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalagmites3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalactites1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalactites2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalactites3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalagmites1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalagmites2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalagmites3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
