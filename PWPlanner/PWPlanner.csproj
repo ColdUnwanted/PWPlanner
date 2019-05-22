@@ -1267,6 +1267,103 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalagmites2.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\GreyStalagmites3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AdTV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienChest.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienComputer.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienDuct1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienDuct2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienFlowers.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienGenerator.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienInfoScreen1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienInfoScreen2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienInfoScreen3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienInfoScreen4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienInfoScreen5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienInfoScreen6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienLift.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienMushroom.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienPillar.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienPillarRuins1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienPillarRuins2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienPlatform1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienPlatform2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienPlatform3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienRockBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienSoilBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienSoilBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienStoneBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienTree1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienTree2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\AlienTree3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueAlienRuins1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueAlienRuins2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueAlienRuins3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueHibernationPod.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueNanotechBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueNanotechBlock1alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueNanotechBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueNanotechBlock3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueNanotechBlock4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CrackedAlienDirt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkAlienRuins1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkAlienRuins2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkNanotechBlock1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkNanotechBlock1alt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkNanotechBlock2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkNanotechBlock3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DarkNanotechBlock4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DrippingAlienSlime1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DrippingAlienSlime2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GlowPlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenLightStems.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenWallLight.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HoveringMine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\KryptoniteBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTurretTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTurretTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTurretTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LaserTurretTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\NewbieLock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Pinata19.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PoisonPlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleHibernationPod.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleLightStems.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PurpleWallLight.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedCraterBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallLaserBeamTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallLaserBeamTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallLaserBeamTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallLaserBeamTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpaceshipChair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpaceshipTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\AlienCaveWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall6.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWindow.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall5.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TentacleTrap.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

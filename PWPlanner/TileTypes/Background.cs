@@ -205,6 +205,20 @@ namespace PWPlanner.TileTypes
             WoodenWindowFrame,
             YellowBrickWallpaper,
             YellowTile,
+            AlienCaveWall,
+            DarkNanotechWall1,
+            DarkNanotechWall2,
+            DarkNanotechWall3,
+            DarkNanotechWall4,
+            DarkNanotechWall5,
+            DarkNanotechWall6,
+            DarkNanotechWindow,
+            PurpleNanotechWall1,
+            PurpleNanotechWall2,
+            PurpleNanotechWall3,
+            PurpleNanotechWall4,
+            PurpleNanotechWall5,
+            PurpleNanotechWall6,
             NONE
         }
     }
