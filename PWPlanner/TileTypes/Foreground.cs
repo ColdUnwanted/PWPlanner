@@ -314,6 +314,7 @@ namespace PWPlanner.TileTypes
             GoldenToilet,
             Gramophone,
             Granite,
+            Granitealt,
             Grass,
             GraveSlant,
             Gravestone,

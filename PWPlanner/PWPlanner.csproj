@@ -706,6 +706,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenToilet.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Gramophone.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Granite.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Granitealt.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Grass.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\GraveSlant.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Gravestone.png" />
@@ -1252,8 +1253,6 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti7.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti8.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\EasterGraffiti9.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalactites1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalactites2.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BrownStalactites3.png" />
@@ -1269,8 +1268,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Tiles\Blocks\AdTV.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign2.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\AlienArrowSign3.png" />
@@ -1344,8 +1341,6 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\SmallLaserBeamTrap4.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\SpaceshipChair.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\SpaceshipTable.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\AlienCaveWall.png" />
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall1.png" />
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\DarkNanotechWall2.png" />
@@ -1360,8 +1355,6 @@
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall4.png" />
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall5.png" />
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall6.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Tiles\Blocks\TentacleTrap.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

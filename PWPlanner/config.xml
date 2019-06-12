@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <data>
-  <version>2.8.0</version>
+  <version>2.8.1</version>
   <changelog>
-    >>05/22/2019 (2.8.0)
-      Added Alien Update items.
+    >>06/12/2019 (2.8.1)
+      Added missing Granite alt sprite.
   </changelog>
 </data>
 
