@@ -738,7 +738,9 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\HamRadio.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\HangingBat.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\HangingHearts.png" />
-    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingLeaves.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingLeaves1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingLeaves2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\HangingLeaves3.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\HangingSkull.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\HangingWires1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\HangingWires2.png" />
