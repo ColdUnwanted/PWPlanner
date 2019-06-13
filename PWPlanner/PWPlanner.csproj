@@ -500,6 +500,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\BowlofJellyBeans.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Brazier.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BrokenRuinTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BrokenRuinTilealt.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeBabyCupTrophy.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeFishermansCupTrophy.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BronzeGoblet.png" />
@@ -593,6 +594,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\DeathCounter.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\DecorativeSword.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Deflector.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SuperDeflector.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\DemonAltar.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\DesktopPC.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Diploma.png" />
@@ -877,6 +879,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\Moai.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\ModernPainting.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\MossyRuinTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MossyRuinTilealt.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Mushroom.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\NeonHeart.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\NetherCrystal.png" />
@@ -991,11 +994,13 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinPatternBlock1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinPatternBlock2.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinSlant.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinSlantalt.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar2.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar3.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinsPillar4.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuinTiles.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RuinTilesalt.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RuleBot.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RustySewerPipe2.png" />
