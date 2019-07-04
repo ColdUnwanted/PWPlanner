@@ -1364,6 +1364,49 @@
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleNanotechWall6.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\TentacleTrap.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BasicButton.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BasicSwitch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BigRedButton.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CampingTent.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ColaFridge.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantFlameTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantFlameTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantFlameTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantFlameTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantPoisonTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantPoisonTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantPoisonTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ConstantPoisonTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\DisappearingBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballTriggerTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballTriggerTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballTriggerTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\FireballTriggerTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GiantPalmTree1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GiantPalmTree2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GiantPalmTree3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GiantPalmTree4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenRedLight.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OnOffLight.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OutHouse.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PowerSwitch.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PressurePad.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ProximitySensor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedWarningLight1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedWarningLight2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiButton.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ScifiLever.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SoapBubbleMachine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTriggerTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTriggerTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTriggerTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SpikeTriggerTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\StoneButton.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WiredMetalTrapdoor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenGroundLever.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenLever.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
