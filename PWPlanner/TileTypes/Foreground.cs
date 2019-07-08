@@ -457,6 +457,7 @@ namespace PWPlanner.TileTypes
             LiquorishBlock,
             LuckyCloverleaf,
             LuckyHorseshoe,
+            MagicCauldron,
             MagicStuff,
             MagLift,
             MakeupTable,

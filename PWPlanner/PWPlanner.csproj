@@ -850,6 +850,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\LiquorishBlock.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\LuckyCloverleaf.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\LuckyHorseshoe.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MagicCauldron.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\MagicStuff.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\MagLift.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\MakeupTable.png" />
