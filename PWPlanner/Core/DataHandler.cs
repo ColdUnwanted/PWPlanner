@@ -158,9 +158,13 @@ namespace PWPlanner
                                 {
                                     DB.TileMap[x, y].Tiles.Add(new Background(image) { TileName = t.TileName });
                                 }
-                                else
+                                else if (t is Special)
                                 {
                                     DB.TileMap[x, y].Tiles.Add(new Special(image) { TileName = t.TileName });
+                                }
+                                else
+                                {
+                                    DB.TileMap[x, y].Tiles.Add(new Wire(image) { TileName = t.TileName });
                                 }
                                 
                             }

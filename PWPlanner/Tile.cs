@@ -26,7 +26,8 @@ namespace PWPlanner
     {
         Background = 1,
         Foreground = 5,
-        Special = 10
+        Special = 10,
+        Wire = 20
     }
 
 }

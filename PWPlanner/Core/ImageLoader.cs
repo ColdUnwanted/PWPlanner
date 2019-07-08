@@ -97,9 +97,13 @@ namespace PWPlanner
                     {
                         tileMap.Add(fileName, new Foreground(image) { TileName = fileName });
                     }
-                    else
+                    else if (name.Contains("Special"))
                     {
                         tileMap.Add(fileName, new Special(image) { TileName = fileName });
+                    }
+                    else
+                    {
+                        tileMap.Add(fileName, new Wire(image) { TileName = fileName });
                     }
                 }
             }

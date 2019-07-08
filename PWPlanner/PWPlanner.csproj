@@ -137,6 +137,7 @@
     <Compile Include="Core\Settings.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="TileTypes\Background.cs" />
+    <Compile Include="TileTypes\Wire.cs" />
     <Compile Include="TileTypes\Foreground.cs" />
     <Compile Include="TileTypes\Special.cs" />
     <Compile Include="Windows\AboutWindow.xaml.cs">
@@ -1406,6 +1407,21 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\WiredMetalTrapdoor.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenGroundLever.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenLever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Wire\ANDGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\DELAYTIMERGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\NANDGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\NORGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\NOTGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\ORGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\RANDOMIZERGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\SIGNALDIVIDERGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\SIGNALHOLDERGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\TIMERGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\TOGGLEGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\XNORGate.png" />
+    <EmbeddedResource Include="Resources\Tiles\Wire\XORGate.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />

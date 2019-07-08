@@ -25,6 +25,7 @@ namespace PWPlanner
             ComboTypes.Items.Add("Backgrounds");
             ComboTypes.Items.Add("Blocks");
             ComboTypes.Items.Add("Special");
+            ComboTypes.Items.Add("Wire");
 
             //Load tile database
             LoadResourcesIntoTileMap();
@@ -55,6 +56,7 @@ namespace PWPlanner
                 Foreground.ForegroundName blockName;
                 Background.BackgroundName backgroundName;
                 Special.SpecialName specialName;
+                Wire.WireName wireName;
 
                 switch (ComboTypes.SelectedIndex)
                 {
@@ -80,6 +82,15 @@ namespace PWPlanner
                         specialName = TileTypes.Special.GetSpecialNameByString(selectableTiles[index].TileName);
 
                         _selectedTile = new Special(image);
+                        _selectedTile.TileName = selectableTiles[index].TileName;
+
+                        TileHover.Content = selectableTiles[index].TileName;
+                        LabelImg.Source = image.Source;
+                        break;
+                    case 3:
+                        wireName = TileTypes.Wire.GetSpecialNameByString(selectableTiles[index].TileName);
+
+                        _selectedTile = new Wire(image);
                         _selectedTile.TileName = selectableTiles[index].TileName;
 
                         TileHover.Content = selectableTiles[index].TileName;
@@ -123,6 +134,10 @@ namespace PWPlanner
             {
                 MakeSpriteSheetForType(new Special());
             }
+            else if (ComboTypes.SelectedIndex == 3)
+            {
+                MakeSpriteSheetForType(new Wire());
+            }
         }
 
         public void SelectTile(string tileNameToSelect)
@@ -145,9 +160,14 @@ namespace PWPlanner
                         ComboTypes.SelectedIndex = 1;
                         break;
                     }
-                    else
+                    else if (i.Value is Special)
                     {
                         ComboTypes.SelectedIndex = 2;
+                        break;
+                    }
+                    else
+                    {
+                        ComboTypes.SelectedIndex = 3;
                         break;
                     }
                 }

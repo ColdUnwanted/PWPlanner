@@ -345,6 +345,15 @@ namespace PWPlanner
             return null;
         }
 
+        public Wire GetWireAt(int X, int Y)
+        {
+            if (HasBackgroundAt(DB, X, Y))
+            {
+                return DB.TileMap[X, Y].Tiles.OfType<Wire>().ToArray()[0];
+            }
+            return null;
+        }
+
         public static bool AnyTileAt(PlannerSettings s, int X, int Y)
         {
             if (s.TileMap[X, Y] != null)
@@ -382,6 +391,15 @@ namespace PWPlanner
             if (AnyTileAt(s, X, Y))
             {
                 return DB.TileMap[X, Y].Tiles.OfType<Special>().Any();
+            }
+            return false;
+        }
+
+        public bool HasWireAt(PlannerSettings s, int X, int Y)
+        {
+            if (AnyTileAt(s, X, Y))
+            {
+                return DB.TileMap[X, Y].Tiles.OfType<Wire>().Any();
             }
             return false;
         }
