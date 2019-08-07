@@ -260,6 +260,21 @@ namespace PWPlanner.TileTypes
             WoodenGroundLever,
             WoodenLever,
             WiredMetalTrapdoor,
+            BrokenStoneBrickWall,
+            EnforcedShipWall,
+            IronBarsBackground,
+            ShipWall,
+            StoneBrickWall,
+            StoneBrickWallIndent1,
+            StoneBrickWallIndent2,
+            StoneBrickWallIndent3,
+            StoneBrickWallIndent4,
+            StoneBrickWallIndent5,
+            StoneBrickWallIndent6,
+            SupportedShipWall,
+            SupportedTimberWall,
+            TimberWall,
+            TimberWallWindow,
             NONE
         }
     }
