@@ -467,6 +467,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\BBBGraffiti1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BBBGraffiti2.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Bed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BaroqueBed.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Bedrock.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BedrockFlat.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\BedrockLava.png" />
@@ -1463,6 +1464,7 @@
     <EmbeddedResource Include="Resources\Tiles\Blocks\Ratlines1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Rope.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\Rope1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ThinRope.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RopeFence.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RopeFence1.png" />
     <EmbeddedResource Include="Resources\Tiles\Blocks\RopeFence2.png" />
@@ -1504,6 +1506,40 @@
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\SupportedTimberWall.png" />
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\TimberWall.png" />
     <EmbeddedResource Include="Resources\Tiles\Backgrounds\TimberWallWindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Barnacles.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueJellyfish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ElectricJellyfishTrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GorgonianCoral.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LargeStarfish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LostDivingHelmet.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\MontiporaCoral.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PufferFishTrap.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RustedAnchor.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Seagrass.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Seaweed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SmallStarfish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TableCoral.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TubeCoral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Special\Acidfall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Acidfall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Acidfall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Acidfall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Bloodfall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Bloodfall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Bloodfall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Bloodfall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\DarkRiverWaterfall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\DarkRiverWaterfall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\DarkRiverWaterfall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\DarkRiverWaterfall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Waterfall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Waterfall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Waterfall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Waterfall3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />

@@ -61,6 +61,21 @@ namespace PWPlanner.TileTypes
             Quicksandalt,
             Water,
             Wateralt,
+            Acidfall1,
+            Acidfall2,
+            Acidfall3,
+            Bloodfall,
+            Bloodfall1,
+            Bloodfall2,
+            Bloodfall3,
+            DarkRiverWaterfall,
+            DarkRiverWaterfall1,
+            DarkRiverWaterfall2,
+            DarkRiverWaterfall3,
+            Waterfall,
+            Waterfall1,
+            Waterfall2,
+            Waterfall3,
             NONE
         }
     }

@@ -997,6 +997,22 @@ namespace PWPlanner.TileTypes
             WoodenCupboard,
             WoodenRailing,
             WoodenStool,
+            ThinRope,
+            Barnacles,
+            BaroquBed,
+            BlueJellyfish,
+            ElectricJellyfishTrap,
+            GorgonianCoral,
+            LargeStarfish,
+            SmallStarfish,
+            LostDivingHelemt,
+            MontiporaCoral,
+            PufferFishTrap,
+            RustedAnchor,
+            Seagrass,
+            Seaweed,
+            TableCoral,
+            TubeCoral,
             NONE
         }
     }
