@@ -59,22 +59,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>8055FAA2C9F59F3B8E5F269CC8622284346F8684</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>PWPlanner_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
-  </PropertyGroup>
-  <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=1.6.2.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
@@ -203,7 +188,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="PWPlanner_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -1540,6 +1524,134 @@
     <EmbeddedResource Include="Resources\Tiles\Special\Waterfall1.png" />
     <EmbeddedResource Include="Resources\Tiles\Special\Waterfall2.png" />
     <EmbeddedResource Include="Resources\Tiles\Special\Waterfall3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlackBed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\CameraSign.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\ColorOMat.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GoldenBathtub.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GothicFireplace.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\LargeClassicPainting.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Mirror.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\OvalMirror.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PasswordPortal.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PunchingBag.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyAcidPuffer.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RecordTrophyDumbFish.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RockPillar1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RockPillar2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RockPillar3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RockPillar4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SlimeballTrap1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SlimeballTrap2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SlimeballTrap3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SlimeballTrap4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SofaBrown1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SofaBrown2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SofaBrown3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\SofaBrown4.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\Telescope.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeTrunkBlock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\TreeTrunkBlockalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WashingMachine.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WhiteArmchair.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenShelf1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenShelf2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\WoodenShelf3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\BlueLantern.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\GreenLantern.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\RedLantern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockAlbescentWhite.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockAmethystSmoke.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockAnakiwa.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockApple.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockAstronaut.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockBlack.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockBlackRock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockBrilliantRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockCabSav.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockChestnutRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockClassicRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockCopperRust.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockCyan.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockDeluge.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockEden.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockMoonRaker.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockRajah.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockRed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockResolutionBlue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockSaffron.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockSalem.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockSaltBox.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockScienceBlue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockSeance.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockShipGray.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockStarship.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockTamarillo.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockTango.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockTawnyPort.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockToledo.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockValhalla.png" />
+    <EmbeddedResource Include="Resources\Tiles\Blocks\PixelBlockWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlackGlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\BlueGlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\GreenGlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleGlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\RedGlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\YellowGlassTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PurpleTile.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\SandWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\TreeTrunkWall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundAlbescentWhite.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundAmethystSmoke.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundAnakiwa.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundApple.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundAstronaut.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundBlack.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundBlackRock.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundBrilliantRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundCabSav.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundChestnutRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundClassicRose.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundCopperRust.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundCyan.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundDeluge.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundEden.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundMoonRaker.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundRajah.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundRed.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundResolutionBlue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundSaffron.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundSalem.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundSaltBox.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundScienceBlue.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundSeance.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundShipGray.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundStarship.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundTamarillo.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundTango.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundTawnyPort.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundToledo.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundValhalla.png" />
+    <EmbeddedResource Include="Resources\Tiles\Backgrounds\PixelBackgroundWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tiles\Special\ClearWater.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\ClearWateralt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\ClearWaterfall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\ClearWaterfall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\ClearWaterfall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\ClearWaterfall3.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Oil.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\Oilalt.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\OilFall.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\OilFall1.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\OilFall2.png" />
+    <EmbeddedResource Include="Resources\Tiles\Special\OilFall3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.7\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\dotnet\Fody.targets')" />

@@ -76,6 +76,18 @@ namespace PWPlanner.TileTypes
             Waterfall1,
             Waterfall2,
             Waterfall3,
+            ClearWater,
+            ClearWateralt,
+            ClearWaterfall,
+            ClearWaterfall1,
+            ClearWaterfall2,
+            ClearWaterfall3,
+            Oil,
+            Oilalt,
+            OilFall,
+            OilFall1,
+            OilFall2,
+            OilFall3,
             NONE
         }
     }
